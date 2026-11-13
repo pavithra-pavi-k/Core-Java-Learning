@@ -8,6 +8,18 @@ public class p{
 
         System.out.println(a+b);
 
+        System.out.println(a-b);
+
+        System.out.println(a*b);
+
+        System.out.println(a/b);
+
+        System.out.println(a%b);
+
+         int p =5, q =9;
+         int temp;
+         temp = a
+
     
 }
 }
