@@ -12,7 +12,7 @@ public class StringExmaple2 {
       */
      
 
-        //1.wat of creating string
+        //1.way of creating string
         String name= "abc";
         System.out.println(name);
 
@@ -25,9 +25,9 @@ public class StringExmaple2 {
         System.out.println(name3);
 
         System.out.println(name == name2);
-        System.out.println(name2==name3);
+        System.out.println(name2==name3);//checks address
 
-        System.out.println(name.equals(name3));
+        System.out.println(name.equals(name3));//checks the values
         System.out.println(name2.equals(name));
     }
 

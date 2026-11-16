@@ -25,6 +25,7 @@ class cow extends Animal{
     void sound(){
         System.out.println(" amm BOO");
     }
+    
 }
 
 class monkey extends Animal{
