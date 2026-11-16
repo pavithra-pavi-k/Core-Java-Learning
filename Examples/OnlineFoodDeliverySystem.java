@@ -28,6 +28,7 @@ class Food{
 
 class Pizza extends Food{
     String size;
+    double finalprice;
 
     Pizza(String foodname,double price,String size){
 
@@ -39,25 +40,33 @@ class Pizza extends Food{
     
     void CalculatePrice(){
         if(size.equals("large")){
-            price = price+150;
+            finalprice = price+150;
         }
         else if (size.equals("Medium")){
-            price  = price +100;
+            finalprice  = price + 100;
 
         }
         else if(size.equals("Small")){
-            price = price + 0;
+            finalprice = price + 0;
         }
     }
 
     void displaypizzadetails(){
        System.out.println("Pizza size : "+size);
-       System.out.println("Final Price : "+price); 
+       System.out.println("Final Price : "+finalprice); 
     }
     
 }
 public class OnlineFoodDeliverySystem {
-    Pizza p = new Pizza("");
+    public static void main(String[] args) {
+        
+    
+    Pizza p = new Pizza("Pizza",100,"Medium");
+    p.displayfood();
+    p.CalculatePrice();
+    p.displaypizzadetails();
 
+
+    }
 
 }
