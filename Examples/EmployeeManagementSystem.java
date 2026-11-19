@@ -7,7 +7,7 @@ class Person{
     int age;
 
 
-    void display(String name ,int age){
+    Person(String name ,int age){
         this.name = name ;
         this.age = age;
 
@@ -74,7 +74,16 @@ public class EmployeeManagementSystem {
 
     public static void main(String[] args) {
         
-    developer d = new developer("pavi",22 ,101 0, 0, null)
+    developer d = new developer("pavi",22 ,101, 1000000, "Java");
+    
+    // d.displayPerson();
+
+    System.out.println("----Employee details----");
+    d.displayEmployee();
+
+    System.out.println("----Developer details-----");
+    d.writecode();
+
     }
 
 }
