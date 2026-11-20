@@ -3,6 +3,7 @@ package OOPS.Encapsulation;
 public class Bank {
 
     private int  balance = 2000;
+    
 
     public int  getbalance(){
         return balance;

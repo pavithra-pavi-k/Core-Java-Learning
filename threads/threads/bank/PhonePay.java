@@ -1,6 +1,6 @@
 package threads.bank;
 
-import OOPS.Encapsulation.Bank;
+import threads.bank.bank;
 
 public class PhonePay  extends Thread{
 
@@ -30,3 +30,5 @@ public class PhonePay  extends Thread{
 
 }
     
+
+
