@@ -6,15 +6,16 @@ public class Main {
 
       public static void main(String[] args)throws Exception {
         bank bank=new bank();
-       PhonePay pay = new PhonePay(bank, "deposite", 500);
+       PhonePay pay = new PhonePay(bank, "withdraw", 500);
         //pay.disp();
 
-        ATM atm = new ATM(bank, "withdraw", 5000);
+        ATM atm = new ATM(bank, "withdraw", 1000);
        // pay.disp();
 
-       PhonePay pay2 = new PhonePay(bank, "deposite", 500);
+       PhonePay pay2 = new PhonePay(bank, "deposite", 5000);
 
 
+       
     pay.join(100);
     pay.start();
 
@@ -23,6 +24,13 @@ public class Main {
 
     atm.join(100);
     atm.start();
+
+
+
+    Thread.sleep(1000);
+
+
+    bank.getBal();
    
 
     }

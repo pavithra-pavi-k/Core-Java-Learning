@@ -17,7 +17,7 @@ public class ATM  extends Thread{
         if(op=="withdraw"){
             try{
                 bank.withdraw(amount);
-                bank.getBal();
+                //bank.getBal();
             
             }
             catch(BankException e){
@@ -26,7 +26,7 @@ public class ATM  extends Thread{
         }
         else if(op=="deposite"){
             bank.deposite(amount);
-            bank.getBal();
+           // bank.getBal();
             
         }
         else if(op=="balance"){
