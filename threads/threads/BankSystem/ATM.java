@@ -1,13 +1,13 @@
-package threads.bank;
+package threads.BankSystem;
 
-import threads.bank.bank;
+import threads.BankSystem.bank;;
 
-public class PhonePay  extends Thread{
-
-    Bank bank;
+public class ATM  extends Thread{
+    
+    bank bank;
     String op;
     int amount;
-    PhonePay(Bank bank,String op,int amount){
+    ATM(bank bank,String op,int amount){
         this.bank=bank;
         this.op=op;
         this.amount=amount;
@@ -15,10 +15,17 @@ public class PhonePay  extends Thread{
 
     public void disp(){
         if(op=="withdraw"){
-            bank.withdraw(amount);
+            try{
+                bank.withdraw(amount);
+            
+            }
+            catch(BankException e){
+                System.out.println(e.getMessage());
+            }
         }
         else if(op=="deposite"){
             bank.deposite(amount);
+            
         }
         else if(op=="balance"){
             bank.getBal();
@@ -28,7 +35,9 @@ public class PhonePay  extends Thread{
         }
     }
 
-}
-    
+    public void run(){
+        disp();
+    }
 
+}
 

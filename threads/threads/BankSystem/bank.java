@@ -1,22 +1,23 @@
-package threads.bank;
+package threads.BankSystem;
 
 public class bank {
 
     private int balance=1000;
 
-    public void withdraw(int amount){
+    synchronized public void withdraw(int amount) throws BankException{
         if(amount<=balance){
             System.out.println(amount+ " withdraw");
             balance-=amount;
+
         }
         else{
-            System.out.println("insuffient amount");
+            throw new  BankException("insuffient amount");
         }
     }
 
     public void deposite(int amount){
         System.out.println(amount+ " credited");
-        balance+=balance;
+        balance+=amount;
     }
 
     public void getBal(){
