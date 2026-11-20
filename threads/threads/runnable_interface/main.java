@@ -37,7 +37,7 @@ public class main {
         Runnable t1=new Thread(a);
         t1.run();
         B b=new B();
-        Thread t2=new Thread(b);
+        Runnable t2=new Thread(b);
         t2.start();  
     }
 }

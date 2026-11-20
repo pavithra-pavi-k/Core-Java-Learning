@@ -1,5 +1,5 @@
 package threads.bank;
 
-public class ATM {
+public class ATM  extends Thread{
 
 }
