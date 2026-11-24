@@ -53,7 +53,7 @@ public class Comparatordemo {
         al.add(new Product("Laptop ",500000));
         al.add(new Product("keyboard ",1500));
         al.add(new Product("Bag ",1000));
-         al.add(new Product("Monitor",20000));
+        al.add(new Product("Monitor",20000));
 
          //sort by name 
          Collections.sort(al,new Productprice());

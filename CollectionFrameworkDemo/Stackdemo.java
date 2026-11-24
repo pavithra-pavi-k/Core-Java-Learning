@@ -20,8 +20,14 @@ public class Stackdemo {
 
     System.out.println(s);
 
+    for(Integer h :s){
+        System.out.println(h);
+    }
 
-    
+    s.push(90);
+    s.push(120);
+
+    System.out.println(s);
 
     }
 
