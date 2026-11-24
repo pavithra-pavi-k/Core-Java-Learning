@@ -2,6 +2,7 @@ package CollectionFrameworkDemo.Set;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 class Employee implements Comparable<Employee>{
@@ -43,13 +44,44 @@ public class ComprableExample2 {
         list2.add(1);
 
 
-        Collections.sort(list);
+        //Collections.sort(list);
         // System.out.println(list);
 
-        for (Employee val : list) {
-            System.out.println(val);
-        }
+        // for (Employee val : list) {
+        //     System.out.println(val);
+        // }
         
+
+
+
+        // Comparator<Employee> com=new Comparator<>() {
+        //     public int compare(Employee a,Employee b){
+        //         if(a.age>b.age){
+        //             return 1;
+        //         }
+        //         return -1;
+        //     }
+        // };
+
+        Comparator<Employee> com=
+           ( a, b)->{
+                if(a.age>b.age){
+                    return 1;
+                }
+                return -1;
+        };
+
+        Collections.sort(list,com);
+        System.out.println(list);
+
+
+        
+
+
+
+
+              
+     
     }
 
 
