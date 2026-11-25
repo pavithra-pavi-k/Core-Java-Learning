@@ -21,6 +21,11 @@ public class MainClass {
                 // System.out.println(evenNumber);
             }
         }
+
+        for(Integer integer:evenNumber){
+            System.out.println(integer);
+
+        }
         
         System.out.println(evenNumber);
     }
