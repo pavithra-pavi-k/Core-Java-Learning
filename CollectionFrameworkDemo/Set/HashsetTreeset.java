@@ -19,6 +19,8 @@ public class HashsetTreeset {
         System.out.println(set);
 
 
+
+        //in tree it wont accept null value but in hashset it will accept null value
          Set<Integer> set2 = new TreeSet<>();
 
         set2.add(21);
@@ -26,6 +28,7 @@ public class HashsetTreeset {
         set2.add(45);
         set2.add(789);
         set2.add(99);
+       // set2.add(null);
 
         System.out.println(set2);
     
