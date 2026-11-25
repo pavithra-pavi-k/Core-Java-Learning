@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 import OOPS.Abstraction.Abstractkeyword.main;
 import java.util.stream.Stream;
 
-public class Example1 {
+public class FilterExample1 {
 
     public static void main(String[] args) {
 
@@ -60,6 +60,8 @@ public class Example1 {
         Predicate<Integer> predicate3=(n)->n%2==0?true:false;
         List<Integer> list2=stream.filter(n->n%2==0?true:false).toList();
         System.out.println(list2);
+
+
 
      }
 
