@@ -9,6 +9,7 @@ public class ParallelStream {
     public static void main(String[] args) {
 
         int size = 10;
+    
 
         List<Integer> list = new ArrayList<>();
         Random random = new Random();
@@ -54,6 +55,13 @@ public class ParallelStream {
 
         System.out.println("Normal Stream time : " +(endStream-startStream));
         System.out.println("Parallel stream time : "+(endPar-startPar));
+
+
+
+
+        
+
+
     }
 
 }
