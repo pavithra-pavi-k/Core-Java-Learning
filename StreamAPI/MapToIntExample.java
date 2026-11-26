@@ -22,6 +22,8 @@ public class MapToIntExample {
         int sum2 = list.stream().map(n->n*2).mapToInt(n->n).sum();
         System.out.println(sum2);
 
+        
+
 
     }
 
