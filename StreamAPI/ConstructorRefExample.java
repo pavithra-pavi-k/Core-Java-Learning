@@ -58,6 +58,10 @@ public class ConstructorRefExample {
         List<Employee> emplist3 = new ArrayList<>();
         emplist3 = names.stream().map(Employee::new).toList();
         System.out.println(emplist3);
+
+       
+
+
         
 
     }
